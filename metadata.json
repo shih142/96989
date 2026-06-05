@@ -1,0 +1,6 @@
+{
+  "name": "全球溫室效應監測儀表板 & Python 程式碼生成器",
+  "description": "全球溫室效應科學監測平台進階版：整合 IPCC 歷史與未來 2100 年極溫/海平面模擬、智慧政策導航優化器、地球關鍵反饋臨界點動態追蹤、與一鍵 AI 生成 Python 監測腳本。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
