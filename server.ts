@@ -954,6 +954,11 @@ Follow this strict JSON schema format:
 // 3. Vite development server setup / Production static server
 // ==========================================
 async function startServer() {
+  if (process.env.VERCEL) {
+    console.log("Running in Vercel serverless environment. Skipping port listener and static router.");
+    return;
+  }
+
   if (process.env.NODE_ENV !== "production") {
     // Development mode
     const vite = await createViteServer({
@@ -980,3 +985,5 @@ async function startServer() {
 }
 
 startServer();
+
+export default app;
